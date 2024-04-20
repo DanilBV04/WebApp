@@ -1,8 +1,8 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
-import Home from '/pages/Home';
-import Analysis from './pages/Analysis';
-import Upload from './pages/Upload';
+import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
+import Home from '//pages/Home';
+import Analysis from './/pages/Analysis';
+import Upload from './/pages/Upload';
 
 function App() {
   return (
@@ -21,7 +21,7 @@ function App() {
             </li>
           </ul>
         </nav>
-        <Switch>
+        <Routes>
           <Route path="/analysis">
             <Analysis />
           </Route>
@@ -31,10 +31,10 @@ function App() {
           <Route path="/">
             <Home />
           </Route>
-        </Switch>
+        </Routes>
       </div>
     </Router>
-  )
+  );
 }
 
 export default App;
