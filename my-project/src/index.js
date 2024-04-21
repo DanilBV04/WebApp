@@ -11,11 +11,7 @@ root.render(
   </React.StrictMode>
 );
 
-function Greeting(props) {
-  return <h1>Hello, this is the first line of the project
-    but it sure ain't the last one, [props.name]!
-  </h1>
-}
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
