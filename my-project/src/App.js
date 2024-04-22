@@ -1,23 +1,25 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
-import Home from './/pages/Home';
-import Analysis from './/pages/Analysis';
-import Upload from './/pages/Upload';
-import Navbar from './Navbar';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Navbar from "./Navbar";
+import NavbarHook from "./NavbarHook";
+import Home from "./pages/Home";
+import Upload from "./pages/Upload";
+import Analysis from "./pages/Analysis";
 
-function App() {
+const App = () => {
   return (
     <Router>
-      <Navbar />
-      <main className='main-content'>
+      <NavbarHook />
+      <main className="main-content">
         <Routes>
-            <Route path="/analysis" element={<Analysis />} />
-            <Route path="/upload" element={<Upload />} />
-            <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/Analysis" element={<Analysis />} />
+          <Route path="/Upload" element={<Upload />} />
         </Routes>
-        </main>
+      </main>
     </Router>
   );
-}
+};
 
 export default App;
