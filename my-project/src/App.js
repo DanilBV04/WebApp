@@ -3,36 +3,19 @@ import { BrowserRouter as Router, Routes, Route, Link} from 'react-router-dom';
 import Home from './/pages/Home';
 import Analysis from './/pages/Analysis';
 import Upload from './/pages/Upload';
+import Navbar from './Navbar';
 
 function App() {
   return (
     <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="/analysis">Analysis</Link>
-            </li>
-            <li>
-              <Link to="/upload">Upload</Link>
-            </li>
-          </ul>
-        </nav>
+      <Navbar />
+      <main className='main-content'>
         <Routes>
-          <Route path="/analysis">
-            <Analysis />
-          </Route>
-          <Route path="/upload">
-            <Upload />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+            <Route path="/analysis" element={<Analysis />} />
+            <Route path="/upload" element={<Upload />} />
+            <Route path="/" element={<Home />} />
         </Routes>
-      </div>
+        </main>
     </Router>
   );
 }
