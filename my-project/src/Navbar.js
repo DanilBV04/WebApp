@@ -4,6 +4,17 @@ import { IoClose, IoMenu } from 'react-icons/io5';
 import './Navbar.css';
 
 const Navbar = () => {
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+        setShowMenu(!showMenu);
+    };
+
+    const closeMenuOnMobile = () => {
+        if (window.innerWidth <= 1150) {
+            setShowMenu(false);
+        }
+    }
     return (
         <header className='header'>
             <nav className='nav container'>
