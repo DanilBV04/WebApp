@@ -10,10 +10,10 @@
   --header-height: 3.5rem;
   --first-color: #CD9FCC;
   --title-color: #61A0AF;
-  --text-color: #548C2F;
+  --text-color: #FC6A03;
   --body-color: #FEFFEA;
-  --body-font: "Montserrat", sans-serif;
-  --second-font: "Dancing Script", cursive;
+  --body-font: monospace;
+  --second-font: monospace;
   --h2-font-size: 1.25rem;
   --small-font-size: 0.813rem;
   --font-semi-bold: 600;
