@@ -8,14 +8,14 @@
 
 :root {
   --header-height: 3.5rem;
-  --first-color: #CD9FCC;
-  --title-color: #61A0AF;
-  --text-color: #FC6A03;
-  --body-color: #FEFFEA;
-  --body-font: monospace;
-  --second-font: monospace;
-  --h2-font-size: 1.25rem;
-  --small-font-size: 0.813rem;
+  --first-color: #030a04;
+  --title-color: #030a04;
+  --text-color: #030a04;
+  --body-color: #faf9f4;
+  --body-font: sans-serif;
+  --second-font: sans-serif;
+  --h2-font-size: 3rem;
+  --small-font-size: 1rem;
   --font-semi-bold: 600;
   --z-tooltip: 10;
   --z-fixed: 100;
