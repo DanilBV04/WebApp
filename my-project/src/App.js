@@ -31,6 +31,12 @@ const App = () => {
           <aside>
             This is where the animation and stuff like that will go.
           </aside>
+          <paragraph>
+            This is the last paragraph for this page.
+          </paragraph>
+          <aside>
+            Another addition will go here.
+          </aside>
       </main>
     </Router>
   );
