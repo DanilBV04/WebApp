@@ -7,5 +7,5 @@ h2 {
     font-weight: 600;
     margin: 1rem;
     text-align: center;
-    above: -50%;
+    padding-top: -50%;
 }

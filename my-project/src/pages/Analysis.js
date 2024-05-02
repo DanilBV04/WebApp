@@ -1,10 +1,10 @@
 import React from 'react';
 import './Analysis.css';
-import {Text, TouchableOpacity, View} from 'react-native';
-import './button.css';
+import "./Button.css";
+import "./Button.js";
+import {Text, TouchableOpacity, View} from "react-native-web";
 import {useState} from 'react';
-import styles from './button.css';
-import './button.js';
+import style from "./Button.js";
 
 const Analysis = () => {
 
@@ -32,9 +32,9 @@ const Analysis = () => {
                 This is where the magic happens!
             </p>
 
-            <View style={styles.container}>
-                <TouchableOpacity style={styles.button} onPress={toggleTask}>
-                <Text style={styles.text}>{isRunning ? 'Stop' : 'Start'}</Text>
+            <View style={style.container}>
+                <TouchableOpacity style={style.button} onPress={toggleTask}>
+                <Text style={style.text}>{isRunning ? 'Stop' : 'Start'}</Text>
                 </TouchableOpacity>
             </View>
         </div>
