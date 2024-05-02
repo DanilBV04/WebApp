@@ -2,7 +2,7 @@ import React from 'react';
 import './Analysis.css';
 import "./Button.css";
 import "./Button.js";
-import {Text, TouchableOpacity, View} from "react-native-web";
+import {Text, TouchableOpacity, View} from "react-native";
 import {useState} from 'react';
 import style from "./Button.js";
 
