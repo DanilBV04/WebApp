@@ -1,10 +1,8 @@
 import React from 'react';
 import './Analysis.css';
-import "./Button.css";
-import "./Button.js";
-import {Text, TouchableOpacity, View} from "react-native";
+import "./button.js";
+import "./button.css";
 import {useState} from 'react';
-import style from "./Button.js";
 
 const Analysis = () => {
 
@@ -14,10 +12,11 @@ const Analysis = () => {
     const toggleTask = () => {
         if (isRunning) {
             clearInterval(intervalId);
+            console.log("Task Stopped")
             setIntervalId(null);
         } else {
             const id = setInterval(() => {
-                console.log('Operation Prevented!');
+                console.log('Progressing through the code...');
             }, 1000);
             setIntervalId(id);
         }
@@ -31,12 +30,9 @@ const Analysis = () => {
             <p>
                 This is where the magic happens!
             </p>
-
-            <View style={style.container}>
-                <TouchableOpacity style={style.button} onPress={toggleTask}>
-                <Text style={style.text}>{isRunning ? 'Stop' : 'Start'}</Text>
-                </TouchableOpacity>
-            </View>
+        <div>
+            <button onClick = {toggleTask}>{isRunning ? 'Stop Code' : 'Start Code' } </button>
+        </div>
         </div>
     );
 }

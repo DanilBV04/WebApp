@@ -25,7 +25,7 @@ function Home() {
             you with the insights you need. It is a powerful tool that
             can help you analyze data quickly and easily.
             For this project, it analyzes images and provides us, viewers,
-            with the insights as well in a form of score evaluation and graphs. 
+            with the insights in a form of score evaluation and graphs. 
           </paragraph>
           <aside>
             This is where the animation and stuff like that will go.

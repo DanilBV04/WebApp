@@ -1,0 +1,37 @@
+container {
+    text-align: center;
+    padding-top: -70%;
+    justify-content: center;
+    padding-left: -30%;
+    padding-right: 30%;
+}
+
+button {
+    background-color: white;
+    color: orangered;
+    padding: 25px 50px;
+    border: 2px solid orange;
+    border-radius: 5;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font: sans-serif;
+    font-size: 30;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 10px 10px 3px #ff5412;
+    transition: 1s;
+    display: block;
+    margin: auto;
+    margin-top: 25%;
+}
+
+button:hover {
+        box-shadow: 0 8px 16px 0 #ffb85d, 0 6px 20px 0 #ffb85d;
+}
+button:active {
+        transform: 'scale(0.95)',
+}
+
+
