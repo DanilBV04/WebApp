@@ -7,18 +7,33 @@ import {useState} from 'react';
 const Analysis = () => {
 
     const [isRunning, setIsRunning] = useState(false);
-    const [intervalId, setIntervalId] = useState(null);
+    const [consoleOutput, setConsoleOutput] = useState('');
 
     const toggleTask = () => {
         if (isRunning) {
-            clearInterval(intervalId);
             console.log("Task Stopped")
-            setIntervalId(null);
         } else {
-            const id = setInterval(() => {
                 console.log('Progressing through the code...');
-            }, 1000);
-            setIntervalId(id);
+                fetch('https://github.com/DanilBV04/TensorFlowAlgorithmFiles/blob/master/FilesforTheProject/main.py')
+                .then(response => response.text())
+                .then(data => {
+                    const taskId = data.taskId;
+
+                    const intervalId = setInterval(() => {
+                        fetch(`example code add in a bit`)
+                        .then(response => response.json())
+                        .then(data => {
+                            if (data.status === 'FINISHED') {
+                                console.log(data);
+                                setConsoleOutput(prevOutput => prevOutput + '\n' + data.result);
+                                clearInterval(intervalId);
+                            }
+                });
+            }, 5000);
+        })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
         }
         setIsRunning(!isRunning);
     
@@ -33,6 +48,7 @@ const Analysis = () => {
         <div>
             <button onClick = {toggleTask}>{isRunning ? 'Stop Code' : 'Start Code' } </button>
         </div>
+        <textarea value={consoleOutput} readOnly />
         </div>
     );
 }
