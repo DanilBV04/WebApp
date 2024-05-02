@@ -7,7 +7,7 @@
 paragraph {
   float: left;
   margin: 3% 1.5%;
-  width: 60%;
+  width: 50%;
   background-color: #ffb85d;
   padding: 1.5%;
   /*border: 5px solid #337b9f;*/
@@ -19,7 +19,7 @@ paragraph {
 aside {
   float: right;
   margin: 3% 3%;
-  width: 30%;
+  width: 40%;
   background-color: #ffb85d;
   padding: 1.5%;
   font: garamond;

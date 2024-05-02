@@ -1,3 +1,11 @@
 .home-container {
     text-align: center;
 }
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 1rem;
+    text-align: center;
+    above: -50%;
+}

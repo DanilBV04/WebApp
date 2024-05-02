@@ -17,26 +17,6 @@ const App = () => {
           <Route path="/Analysis" element={<Analysis />} />
           <Route path="/Upload" element={<Upload />} />
         </Routes>
-          <paragraph>This is an example of a paragraph
-          containter box. It is used to contain the introduction
-          to the idea of the project.
-          </paragraph>
-          <aside>
-            This is where another explanation will go
-          </aside>
-          <paragraph>
-            This is where explanation of the project
-            processes will go in the future.
-          </paragraph>
-          <aside>
-            This is where the animation and stuff like that will go.
-          </aside>
-          <paragraph>
-            This is the last paragraph for this page.
-          </paragraph>
-          <aside>
-            Another addition will go here.
-          </aside>
       </main>
     </Router>
   );
