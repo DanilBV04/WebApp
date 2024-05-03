@@ -16,10 +16,14 @@ npm install react-icons --save
 npm install react-responsive --save
 npm i react-native
 npm i web-vitals
-3. In terminal, run “cd my-project”, then run “npm start”
-4. It will run a local host server
+3. Then, to install all necessary dependancies, run this command:
+cd path/to/my-project
+npm install
+| Make sure to replace the path/to/my-project with the actual destination of the downloaded package.json file |
+4. In terminal, run “cd my-project”, then run “npm start”
+5. It will run a local host server
 
-| This will require downloading the files from the Google Drive link and tweaking the file imports
+| Next step will require downloading the files from the Google Drive link and tweaking the file imports
 in main.py to where they will be stored on the local machine. |
 
 How to run the algorithm for "Analysis" page:
