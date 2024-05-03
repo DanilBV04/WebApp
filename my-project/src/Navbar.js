@@ -37,15 +37,6 @@ const Navbar = () => {
                 Analysis
               </NavLink>
             </li>
-            <li className="nav__item">
-              <NavLink
-                to="/Upload"
-                className="nav__link"
-                onClick={closeMenuOnMobile}
-              >
-                Upload
-              </NavLink>
-            </li>
           </ul>
           <div className="nav__close" id="nav-close" onClick={toggleMenu}>
             <IoClose />

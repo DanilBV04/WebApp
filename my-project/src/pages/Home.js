@@ -5,33 +5,32 @@ function Home() {
     return (
         <div className="home-container">
             <h1>Home</h1>
-            <p>
-                Welcome to the world of AI!
-            </p>
-            <h2>What is Tensorflow?</h2>
             <paragraph>
-            Tensorflow is a widely used tool to analyze images,
-            videos, and other data. It is a machine learning tool
-            that is used to analyze data and provide insights.
+            This project is about developing an efficient and user-friendly
+            image analysis algorithm, that will help improve the already existing
+            traffic sign analysis systems. This will not only help the drivers
+            be more at ease while driving, but will also significantly reduce
+            the risks of endangering the life of the driver and the passengers, 
+            as well as everyone and everything around the vehicle. 
           </paragraph>
           <aside>
             This is where another explanation will go
           </aside>
-          <h2>How does it work?</h2>
           <paragraph>
-            Process
-            The process of using Tensorflow is simple. You upload
-            the data you want to analyze, and Tensorflow will provide
-            you with the insights you need. It is a powerful tool that
-            can help you analyze data quickly and easily.
-            For this project, it analyzes images and provides us, viewers,
-            with the insights in a form of score evaluation and graphs. 
+            Wah
           </paragraph>
           <aside>
-            This is where the animation and stuff like that will go.
+          Wah
           </aside>
           <paragraph>
-            This is the last paragraph for this page.
+          The process of using Tensorflow is simple. First, the data is thoroughly
+            selected to be used for this project, as the more accurate and reliable
+            the data is, the better analysis can the algorithm perform. Next is when
+            the true magic happens. The data is fed into the algorithm, which then
+            processes the data and provides us with the results. These results can be 
+            in any form, a graph, an evaluation metric number etc. The important thing 
+            we look for is a very high accuracy rate number, as the higher it is the 
+            better the overall algorithm build is. 
           </paragraph>
           <aside>
             Another addition will go here.

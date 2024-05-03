@@ -4,6 +4,11 @@ import shutil
 from flask_cors import CORS
 from flask import request
 import os
+import subprocess
+
+requirements_path = r'C:\Users\user\Desktop\WebApp - GitHub\WebApp\my-project\src\pages\requirements.txt'
+
+subprocess.run(['pip', 'install', '-r', requirements_path])
 
 app = Flask(__name__)
 
@@ -12,11 +17,17 @@ CORS(app)
 @app.route('/run_script', methods = ['GET'])
 def run_script():
 
+
+    #repo_dir = 'TensorFlowAlgorithmFiles'
+    #if os.path.exists(repo_dir):
+        #shutil.rmtree(repo_dir)
+    #subprocess.run(['git', 'clone', url])
+
     url = 'https://github.com/DanilBV04/TensorFlowAlgorithmFiles.git'
     subprocess.run(['git', 'clone', url])
 
 
-    script_path = r'C:\Users\user\Desktop\WebApp - GitHub\WebApp\my-project\src\pages\TensorFlowAlgorithmFiles\main.py'
+    script_path = r'C:\Users\user\PycharmProjects\FinalYearProject\.venv\main.py'
     result = subprocess.run(['python', script_path], stdout=subprocess.PIPE)
     
     return jsonify(result = result.stdout.decode('utf-8'))

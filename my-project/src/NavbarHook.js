@@ -39,15 +39,6 @@ const NavbarHook = () => {
             Analysis
           </NavLink>
         </li>
-        <li>
-          <NavLink
-            to="/Upload"
-            className={linkClassName}
-            onClick={closeMobileMenu}
-          >
-            Upload
-          </NavLink>
-        </li>
       </ul>
     );
   };
@@ -56,7 +47,7 @@ const NavbarHook = () => {
     <header className="header">
       <nav className="nav container">
         <NavLink to="/" className="nav__logo">
-          Something AI
+          Tensorflow Analysis
         </NavLink>
 
         {isMobile && (

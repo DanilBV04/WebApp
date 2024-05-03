@@ -2,10 +2,32 @@
     text-align: center;
 }
 
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 3rem;
+    text-align: center;
+    padding-top: -50%;
+    background-color: #ffb85d;
+    border-color: #ff5412;
+    border-radius: 5px;
+    border: 2.5px solid #ff5412;
+    padding: 1rem;
+    box-shadow: 0 30px 40px #ff5412;
+}
+
 h2 {
     font-size: 1.5rem;
     font-weight: 600;
     margin: 1rem;
     text-align: center;
     padding-top: -50%;
+}
+
+p {
+    margin: 1rem;
+    text-align: center;
+    padding-top: -50%;
+    font-size: 2rem;
 }

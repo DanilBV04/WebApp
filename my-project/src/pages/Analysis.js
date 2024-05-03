@@ -41,7 +41,7 @@ const Analysis = () => {
 
         })
                 .catch((error) => {
-                    console.error('Error:', error);
+                    console.error('Error: ', error);
                     console.log('Error.message: ', error.message);
                     setConsoleOutput(prevOutput => prevOutput + '\nError ' + error.message);
             });
