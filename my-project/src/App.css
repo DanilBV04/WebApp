@@ -13,6 +13,7 @@ paragraph {
   /*border: 5px solid #337b9f;*/
   font-size: 1.2rem;
   box-shadow: 10px 10px 3px #ff5412;
+  border-radius: 5px;
 }
 
 
@@ -26,4 +27,5 @@ aside {
   /*border: 5px solid #ff5412;*/
   font-size: 1.2rem;
   box-shadow: 10px 10px 3px #ff5412;
+  border-radius: 5px;
 }

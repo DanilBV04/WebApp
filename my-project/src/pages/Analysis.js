@@ -70,10 +70,7 @@ const Analysis = () => {
 
     return (
         <div className="analysis-container">
-            <h2>Analysis</h2>
-            <p>
-                This is where the magic happens!
-            </p>
+            <h1>Analysis</h1>
         <div>
             <button onClick = {toggleTask}>{isRunning ? 'Stop Code' : 'Start Code' } </button>
         </div>

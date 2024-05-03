@@ -14,13 +14,19 @@ function Home() {
             as well as everyone and everything around the vehicle. 
           </paragraph>
           <aside>
-            This is where another explanation will go
-          </aside>
-          <paragraph>
-            Wah
-          </paragraph>
-          <aside>
-          Wah
+            <figure class='quote'>
+              <blockquote>
+              “Many a times, drivers face a lot of challenges on <em>unknown roads</em> 
+              and in such scenarios paying attention to both the road and 
+              upcoming traffic signs can be an arduous task. TSDR application not 
+              only ensures road safety, but also allows the driver to be a little 
+              more at ease while driving on tricky roads.” 
+              </blockquote>
+              <figcaption>
+                &mdash; Aashrith Vennelakanti, Smriti Shreya, 
+                <cite>Traffic Sign Detection and Recognition using a CNN Ensemble</cite>
+              </figcaption>
+            </figure>
           </aside>
           <paragraph>
           The process of using Tensorflow is simple. First, the data is thoroughly
@@ -33,7 +39,19 @@ function Home() {
             better the overall algorithm build is. 
           </paragraph>
           <aside>
-            Another addition will go here.
+            <figure class='quote'>
+              <blockquote>
+          “[...] Poor reconstruction of road signs commonly leads to less 
+          informative guidance and unsatisfactory visual appearance. In this 
+          paper, we present a pipeline for embedding road sign models based on 
+          deep convolutional neural networks (CNNs).” 
+          </blockquote>
+                <figcaption>
+                      &mdash; Zhu Mao, Fan Zhang, 
+                      <cite>Deep Neural Networks for Road Sign Detection and 
+                        Embedded Modeling Using Oblique Aerial Images</cite>
+                </figcaption>
+          </figure>
           </aside>
         </div>
     );
