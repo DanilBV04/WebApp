@@ -11,14 +11,10 @@ After doing all of that, follow the next instructions:
 How to run the website:
 1. Open the "WebApp" project file in VSCode
 2. Run the following commands in the terminal:
-npm install react-scripts --save
-npm install react-icons --save
-npm install react-responsive --save
-npm i react-native
-npm i web-vitals
 3. Then, to install all necessary dependancies, run this command:
 cd path/to/my-project
-npm install
+| Typically it can be solved with cd my-project | 
+npm install --force 
 | Make sure to replace the path/to/my-project with the actual destination of the downloaded package.json file |
 4. In terminal, run “cd my-project”, then run “npm start”
 5. It will run a local host server
