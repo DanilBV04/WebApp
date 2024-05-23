@@ -28,18 +28,17 @@ const Analysis = () => {
         } else {
             console.log('Progressing through the code...');
             fetch('http://127.0.0.1:5000/run_script')
-            .then(response => {    
-                if (!response.ok) {
+                .then(response => {    
+                    if (!response.ok) {
                     throw new Error('HTTP error! status: ${response.status}');
                 }
-                return response.text();
+                return response.json();  // Parse response body as JSON
             })
-            .then(data => {
-                console.log('Data: ', data);
-                console.log('Data.result: ', data.result);
-                setConsoleOutput(prevOutput => prevOutput + '\n' + data.result);
-
-        })
+                .then(data => {
+                    console.log('Data: ', data);
+                    console.log('Data.result: ', data.result);
+                    setConsoleOutput(prevOutput => prevOutput + '\n' + data.result);
+            })
                 .catch((error) => {
                     console.error('Error: ', error);
                     console.log('Error.message: ', error.message);

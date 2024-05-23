@@ -12,29 +12,21 @@ subprocess.run(['pip', 'install', '-r', requirements_path])
 
 app = Flask(__name__)
 
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})  # Allow all origins for all routes
 
-@app.route('/run_script', methods = ['GET'])
+@app.route('/run_script', methods=['GET'])
 def run_script():
-
-
-    #repo_dir = 'TensorFlowAlgorithmFiles'
-    #if os.path.exists(repo_dir):
-        #shutil.rmtree(repo_dir)
-    #subprocess.run(['git', 'clone', url])
-
-    url = 'https://github.com/DanilBV04/TensorFlowAlgorithmFiles.git'
-    subprocess.run(['git', 'clone', url])
-
-
     script_path = r'C:\Users\user\PycharmProjects\FinalYearProject\.venv\main.py'
-    result = subprocess.run(['python', script_path], stdout=subprocess.PIPE)
-    
-    return jsonify(result = result.stdout.decode('utf-8'))
+    output_file = 'output.txt'
+    with open(output_file, 'w+') as f:  # 'w+' mode for both writing and reading
+        result = subprocess.run(['python', script_path], stdout=f)
+        f.seek(0)  # Go back to the start of the file
+        output = f.read()
+
+    return jsonify(result=output)
 
 @app.route('/delete_repo', methods=['DELETE'])
 def delete_repo():
-
     repo_dir = 'TensorFlowAlgorithmFiles'
     shutil.rmtree(repo_dir)
 
